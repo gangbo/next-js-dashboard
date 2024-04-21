@@ -1,4 +1,3 @@
-import Negotiator from "negotiator";
 
 export const locales = ["en", "en-US", "zh", "zh-CN", "ja", "ko", "fr", "de"];
 export const localeNames: any = {
@@ -12,8 +11,6 @@ export const localeNames: any = {
 export const defaultLocale = "en";
 
 export function getLocale(headers: any): string {
-  let languages = new Negotiator({ headers }).languages();
-
   return 'en';
 }
 
